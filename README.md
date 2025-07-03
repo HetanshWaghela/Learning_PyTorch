@@ -24,6 +24,7 @@
 - The video that I will be referring to most is
 LEARN PYTORCH IN A DAY by Daniel Bourke
 https://youtu.be/Z_ikDlimN6A?si=3rpzwTbnIhzvstQ
+- Github repo -> https://github.com/mrdbourke/pytorch-deep-learning
 ---
 
 ## 🌱 Learning Mindset
