@@ -21,7 +21,9 @@
 - Jupyter Notebook  
 - Git & GitHub  
 - Google Colab (for GPU acceleration)
-
+The video that I will be referring to most is
+LEARN PYTORCH IN A DAY by Daniel Bourke
+https://youtu.be/Z_ikDlimN6A?si=3rpzwTbnIhzvstQ_
 ---
 
 ## 🌱 Learning Mindset
