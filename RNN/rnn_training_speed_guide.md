@@ -10,14 +10,14 @@ It is written to be **framework-agnostic** (PyTorch / TensorFlow / JAX, etc.) an
 
 For a single training step of an RNN, the rough cost is:
 
-\[
+$$
 \text{Cost per step} \propto \text{batch\_size} \times \text{sequence\_length} \times \text{hidden\_size}^2 \times \text{num\_layers}
-\]
+$$
 
 More precisely, for each time step the RNN does matrix multiplies of size roughly:
 
-- Input-to-hidden: \(\text{input\_dim} \times \text{hidden\_size}\)
-- Hidden-to-hidden: \(\text{hidden\_size} \times \text{hidden\_size}\)
+- Input-to-hidden: $\text{input\_dim} \times \text{hidden\_size}$
+- Hidden-to-hidden: $\text{hidden\_size} \times \text{hidden\_size}$
 
 For gated RNNs (GRU, LSTM), you multiply that by **number of gates** (3 for GRU, 4 for LSTM), so they are slower per time step than a simple RNN of the same hidden size.
 
@@ -159,9 +159,9 @@ Plus:
 - Each extra layer adds another RNN computation per time step.
 - Rough rule:
 
-\[
+$$
 \text{Cost} \propto \text{num\_layers}
-\]
+$$
 
 - Doubling the number of layers ≈ **double** the cost (assuming all else equal).
 
